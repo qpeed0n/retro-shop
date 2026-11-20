@@ -1,125 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Retro shop</title>
 </head>
+
 <body>
     <section class="catalog">
+        <div class="catalog__text">
+            <div class="catalog__text-h">
+                <h2>Наш каталог</h2>
+            </div>
+            <div class="catalog__text-p">
+                <p>Показать все -></p>
+            </div>
+        </div>
         <div class="catalog__main">
-            <div class="catalog__main-img">
-                <img src="images/rain.png" alt="rain">
-            </div>
-            <div class="catalog__main-text">
-                <div class="main-text_name">
-                    <p>Звуки дождя и грозы</p>
+            <div class="catalog__main-card">
+                <div class="catalog__main-img">
+                    <img src="images/rain.png" alt="rain">
+
+                    <div class="catalog__main-listen">
+                        <img src="images/play.png" alt="">
+                        <p>0:15</p>
+                    </div>
                 </div>
-                <div class="main-text_description">
-                    <p>Гроза, ливень, ночь, фонари - все в одном произведении</p>
+                <div class="catalog__main-text">
+                    <div class="main-text__name">
+                        <p>Звуки Дождя и Грозы</p>
+                    </div>
+                    <div class="main-text__description">
+                        <p>Гроза, ливень, ночь | 60 мин</p>
+                    </div>
+                    <div class="main-text__price">
+                        <p>690 Руб.</p>
+                    </div>
+                </div>
+                <div class="catalog__main-busket">
+                    <button id="btnPlay" class="btn">В корзину</button>
                 </div>
             </div>
-            <div class="catalog__main-play">
-                <button id="btnPlay" class="btn play active">
-                    <img src="images/play.png" alt="play">
-                </button>
-                <button id="btnPause" class="btn pause unactive">
-                    <img src="images/pause.png" alt="pause">
-                </button>
+
+            <div class="catalog__main-card">
+                <div class="catalog__main-img">
+                    <img src="images/bird.png" alt="rain">
+
+                    <div class="catalog__main-listen">
+                        <img src="images/play.png" alt="">
+                        <p>0:15</p>
+                    </div>
+                </div>
+                <div class="catalog__main-text">
+                    <div class="main-text__name">
+                        <p>Пение Птиц</p>
+                    </div>
+                    <div class="main-text__description">
+                        <p>Утро, солнце и композиция птиц | 60 мин</p>
+                    </div>
+                    <div class="main-text__price">
+                        <p>490 Руб.</p>
+                    </div>
+                </div>
+                <div class="catalog__main-busket">
+                    <button id="btnPlay" class="btn">В корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog__main-card">
+                <div class="catalog__main-img">
+                    <img src="images/sea.png" alt="rain">
+
+                    <div class="catalog__main-listen">
+                        <img src="images/play.png" alt="">
+                        <p>0:15</p>
+                    </div>
+                </div>
+                <div class="catalog__main-text">
+                    <div class="main-text__name">
+                        <p>Звуки Моря</p>
+                    </div>
+                    <div class="main-text__description">
+                        <p>Закат, прохладный ветер, шум прибоя | 60 мин</p>
+                    </div>
+                    <div class="main-text__price">
+                        <p>590 Руб.</p>
+                    </div>
+                </div>
+                <div class="catalog__main-busket">
+                    <button id="btnPlay" class="btn">В корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog__main-card">
+                <div class="catalog__main-img">
+                    <img src="images/tropic-bird.png" alt="rain">
+
+                    <div class="catalog__main-listen">
+                        <img src="images/play.png" alt="">
+                        <p>0:15</p>
+                    </div>
+                </div>
+                <div class="catalog__main-text">
+                    <div class="main-text__name">
+                        <p>Пение Тропических Птиц</p>
+                    </div>
+                    <div class="main-text__description">
+                        <p>Гроза, ливень, ночь | 60 мин</p>
+                    </div>
+                    <div class="main-text__price">
+                        <p>790 Руб.</p>
+                    </div>
+                </div>
+                <div class="catalog__main-busket">
+                    <button id="btnPlay" class="btn">В корзину</button>
+                </div>
             </div>
         </div>
 
-        <div class="catalog__main">
-            <div class="catalog__main-img">
-                <img src="images/rain.png" alt="rain">
-            </div>
-            <div class="catalog__main-text">
-                <div class="main-text_name">
-                    <p>Звуки дождя и грозы</p>
-                </div>
-                <div class="main-text_description">
-                    <p>Гроза, ливень, ночь, фонари - все в одном произведении</p>
-                </div>
-            </div>
-            <div class="catalog__main-play">
-                <button id="btnPlay" class="btn play active">
-                    <img src="images/play.png" alt="play">
-                </button>
-                <button id="btnPause" class="btn pause unactive">
-                    <img src="images/pause.png" alt="pause">
-                </button>
-            </div>
-        </div>
-
-        <div class="catalog__main">
-            <div class="catalog__main-img">
-                <img src="images/rain.png" alt="rain">
-            </div>
-            <div class="catalog__main-text">
-                <div class="main-text_name">
-                    <p>Звуки дождя и грозы</p>
-                </div>
-                <div class="main-text_description">
-                    <p>Гроза, ливень, ночь, фонари - все в одном произведении</p>
-                </div>
-            </div>
-            <div class="catalog__main-play">
-                <button id="btnPlay" class="btn play active">
-                    <img src="images/play.png" alt="play">
-                </button>
-                <button id="btnPause" class="btn pause unactive">
-                    <img src="images/pause.png" alt="pause">
-                </button>
-            </div>
-        </div>
-
-        <div class="catalog__main">
-            <div class="catalog__main-img">
-                <img src="images/rain.png" alt="rain">
-            </div>
-            <div class="catalog__main-text">
-                <div class="main-text__name">
-                    <p>Звуки дождя и грозы</p>
-                </div>
-                <div class="main-text__description">
-                    <p>Гроза, ливень, ночь, фонари - все в одном произведении</p>
-                </div>
-            </div>
-            <div class="catalog__main-play">
-                <button id="btnPlay" class="btn play active">
-                    <img src="images/play.png" alt="play">
-                </button>
-                <button id="btnPause" class="btn pause unactive">
-                    <img src="images/pause.png" alt="pause">
-                </button>
-            </div>
-        </div>
-
-        <div class="catalog__main">
-            <div class="catalog__main-img">
-                <img src="images/rain.png" alt="rain">
-            </div>
-            <div class="catalog__main-text">
-                <div class="main-text_name">
-                    <p>Звуки дождя и грозы</p>
-                </div>
-                <div class="main-text_description">
-                    <p>Гроза, ливень, ночь, фонари - все в одном произведении</p>
-                </div>
-            </div>
-            <div class="catalog__main-play">
-                <button id="btnPlay" class="btn play active">
-                    <img src="images/play.png" alt="play">
-                </button>
-                <button id="btnPause" class="btn pause unactive">
-                    <img src="images/pause.png" alt="pause">
-                </button>
-            </div>
-        </div>
     </section>
 
 
     <script src="script/script.js"></script>
 </body>
+
 </html>
