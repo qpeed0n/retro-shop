@@ -522,3 +522,11 @@ body {
 .delivery-card button:active {
     transform: translateY(2px);
 }
+
+footer {
+  background: #2b2a2a;
+  color: #d6d4d4;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
