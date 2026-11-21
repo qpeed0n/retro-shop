@@ -1,7 +1,7 @@
 :root {
   --color-ink: #292b24;
   --color-forest: #344238;
-  --color-forest-dark: #252d27;
+  --color-forest-dark: #140902;
   --color-cream: #f3eee4;
   --color-paper: #fffdf8;
   --color-sand: #e5dac8;
@@ -165,6 +165,12 @@ body {
     gap: 40px;
 }
 
+.one-row,
+.two-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog__text {
     display: flex;
     justify-content: space-between;
@@ -193,7 +199,8 @@ body {
 
 .catalog__main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .catalog__main-card {
