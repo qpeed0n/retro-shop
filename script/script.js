@@ -185,7 +185,7 @@ function calculateTotal() {
     const giftPrice = giftWrap.checked ? Number(giftWrap.value) : 0
 
     const total = Math.round(deliveryPrice * cityMult + giftPrice)
-    totalPriceEl.textContent = `${total} ₽`
+    totalPriceEl.textContent = `${total} Р`
 }
 
 card.addEventListener('change', calculateTotal)
