@@ -535,7 +535,7 @@ body {
 footer {
     background: var(--color-forest-dark);
     color: var(--color-cream);
-    height: 100px;
+    height: 60px;
     text-align: center;
     padding: 15px 0;
     font-size: 14px;
