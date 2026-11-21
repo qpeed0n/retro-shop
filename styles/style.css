@@ -1,3 +1,14 @@
+:root {
+  --color-ink: #292b24;
+  --color-forest: #344238;
+  --color-forest-dark: #252d27;
+  --color-cream: #f3eee4;
+  --color-paper: #fffdf8;
+  --color-sand: #e5dac8;
+  --color-muted: #706b5e;
+  --color-accent: #b8794d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +19,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #fbf9f4;
+    background: var(--color-cream);
 }
 
 .banner {
@@ -149,7 +160,7 @@ body {
 .catalog {
     display: flex;
     flex-direction: column;
-    background: #fbf9f4;
+    background: var(--color-cream);
     padding: 20px;
     gap: 30px;
     padding: 40px;
@@ -166,7 +177,7 @@ body {
 .catalog__text-h {
     font-size: 28px;
     font-weight: bold;
-    color: #241a00;
+    color: var(--color-ink);
 }
 
 .catalog__text-p {
@@ -192,8 +203,8 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: 0 0 8px 4px rgba(217, 211, 203, 0.8);
-    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(45, 48, 39, 0.12);
+    background: var(--color-paper);
     max-width: 350px;
 }
 
@@ -218,7 +229,7 @@ body {
     background: #ffffff;
     border: 0;
     border-radius: 20px;
-    color: #241a00;
+    color: var(--color-ink);
     cursor: pointer;
     font: inherit;
     gap: 15px;
@@ -274,21 +285,21 @@ body {
 }
 
 .btn {
-    background: #241a00;
+    background: var(--color-forest);
     border: none;
-    color: #fbf9f4;
+    color: var(--color-cream);
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 0 8px 4px rgba(36, 26, 0, 0.2);
+    box-shadow: 0 6px 16px rgba(37, 45, 39, 0.18);
     transition: all 0.2s ease;
 }
 
 .btn:hover {
-    background: #fbf9f4;
-    color: #241a00;
-    box-shadow: 0 0 8px 4px rgba(251, 249, 244, 0.2);
+    background: var(--color-sand);
+    color: var(--color-forest-dark);
+    box-shadow: 0 6px 16px rgba(37, 45, 39, 0.12);
 }
 
 .catalog__main-busket {
@@ -314,7 +325,7 @@ body {
     padding: 18px 32px;
 
     color: #ffffff;
-    background: #050505;
+    background: var(--color-forest-dark);
     box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.28);
 }
 
@@ -437,7 +448,7 @@ body {
     padding: 46px 56px 48px;
     border: 1px solid rgba(47, 42, 38, 0.08);
     border-radius: 28px;
-    background: #ebe0d5;
+    background: var(--color-sand);
     box-shadow: 0 14px 35px rgba(57, 43, 31, 0.08);
 }
 
@@ -461,10 +472,10 @@ body {
     width: 100%;
     height: 54px;
     padding: 0 18px;
-    color: #2f2a26;
+    color: var(--color-ink);
     font: inherit;
     font-size: 16px;
-    background: #fffaf5;
+    background: var(--color-paper);
     border: 1px solid rgba(47, 42, 38, 0.18);
     border-radius: 14px;
 }
@@ -489,7 +500,7 @@ body {
     width: 19px;
     height: 19px;
     margin: 0;
-    accent-color: #3b3530;
+    accent-color: var(--color-forest);
 }
 
 .delivery-card .total {
@@ -509,14 +520,14 @@ body {
     font: inherit;
     font-size: 16px;
     font-weight: 600;
-    background: #3b3530;
+    background: var(--color-forest);
     border: 0;
     border-radius: 14px;
     cursor: pointer;
 }
 
 .delivery-card button:hover {
-    background: #211d1a;
+    background: var(--color-forest-dark);
 }
 
 .delivery-card button:active {
@@ -524,8 +535,8 @@ body {
 }
 
 footer {
-  background: #2b2a2a;
-  color: #d6d4d4;
+  background: var(--color-forest-dark);
+  color: var(--color-cream);
   text-align: center;
   padding: 15px 0;
   font-size: 14px;
