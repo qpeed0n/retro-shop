@@ -184,7 +184,37 @@
 
     <footer id="siteFooter" class="site-footer"></footer>
 
+    <div class="delivery-card">
+        <h2>Рассчитать доставку</h2>
 
+        <label class="title" for="citySelect">Город</label>
+        <select id="citySelect">
+            <option value="1">Сыктывкар (×1)</option>
+            <option value="1.1">Киров (×1.1)</option>
+            <option value="1.1">Пермь (×1.1)</option>
+            <option value="1.2">Москва (×1.2)</option>
+            <option value="1.2">Санкт-Петербург (×1.2)</option>
+            <option value="1.5">Владивосток (×1.5)</option>
+        </select>
+
+        <p class="title">Доставка</p>
+        <label class="option">
+            <input type="radio" name="delivery" value="350" checked> Почтой России — 350 Р
+        </label>
+        <label class="option">
+            <input type="radio" name="delivery" value="490"> Курьером — 490 Р
+        </label>
+
+        <label class="option">
+            <input type="checkbox" id="giftWrap" value="200"> Подарочная упаковка — 200 Р
+        </label>
+
+        <div class="total">
+            Итого: <span id="totalPrice">420 Р</span>
+        </div>
+
+        <button id="orderBtn">Оформить заказ</button>
+    </div>
     <script src="script/script.js"></script>
 
 
