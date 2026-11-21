@@ -8,6 +8,47 @@
 </head>
 <body>
     
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Retro shop</title>
+</head>
+<body>
+    
+    <div class="delivery-card">
+        <h2>Рассчитать доставку</h2>
+
+        <label class="title" for="citySelect">Город</label>
+        <select id="citySelect">
+            <option value="1">Сыктывкар (×1)</option>
+            <option value="1.1">Киров (×1.1)</option>
+            <option value="1.1">Пермь (×1.1)</option>
+            <option value="1.2">Москва (×1.2)</option>
+            <option value="1.2">Санкт-Петербург (×1.2)</option>
+            <option value="1.5">Владивосток (×1.5)</option>
+        </select>
+
+        <p class="title">Доставка</p>
+        <label class="option">
+            <input type="radio" name="delivery" value="350" checked> Почтой России — 350 ₽
+        </label>
+        <label class="option">
+            <input type="radio" name="delivery" value="490"> Курьером — 490 ₽
+        </label>
+
+        <label class="option">
+            <input type="checkbox" id="giftWrap" value="200"> Подарочная упаковка — 200 ₽
+        </label>
+
+        <div class="total">
+            Итого: <span id="totalPrice">420 ₽</span>
+        </div>
+
+        <button id="orderBtn">Оформить заказ</button>
+    </div>
 
     <script src="script/script.js"></script>
 </body>
